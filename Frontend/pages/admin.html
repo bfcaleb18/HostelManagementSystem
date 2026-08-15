@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hostel Management System - Admin</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="nav-brand">
+            Hostel Management System
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="admin.html">
+                Admin Panel
+            </a>
+
+            <button
+                id="logoutButton"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+
+    <main class="page-container">
+
+        <section class="page-header">
+
+            <h1>
+                Administrator Dashboard
+            </h1>
+
+            <p>
+                Manage hostel rooms and student bookings.
+            </p>
+
+        </section>
+
+
+        <!-- Message -->
+
+        <p
+            id="adminMessage"
+            class="message"
+        ></p>
+
+
+        <!-- ROOM MANAGEMENT -->
+
+        <section class="admin-section">
+
+            <div class="admin-section-header">
+
+                <div>
+
+                    <h2>
+                        Room Management
+                    </h2>
+
+                    <p>
+                        Add, edit and delete hostel rooms.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="addRoomButton"
+                    class="btn"
+                >
+                    Add Room
+                </button>
+
+            </div>
+
+
+            <div
+                id="roomsAdminContainer"
+                class="admin-table-container"
+            >
+
+                <p>
+                    Loading rooms...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOOKING MANAGEMENT -->
+
+        <section class="admin-section">
+
+            <div class="admin-section-header">
+
+                <div>
+
+                    <h2>
+                        Booking Management
+                    </h2>
+
+                    <p>
+                        Review and manage student booking requests.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="bookingsAdminContainer"
+                class="admin-table-container"
+            >
+
+                <p>
+                    Loading bookings...
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/api.js"></script>
+
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>

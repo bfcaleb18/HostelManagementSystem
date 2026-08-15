@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hostel Management System - My Bookings</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="nav-brand">
+            Hostel Management System
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="rooms.html">
+                Rooms
+            </a>
+
+            <a href="bookings.html">
+                My Bookings
+            </a>
+
+            <button
+                id="logoutButton"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main content -->
+
+    <main class="page-container">
+
+        <section class="page-header">
+
+            <h1>My Bookings</h1>
+
+            <p>
+                View and manage your hostel booking requests.
+            </p>
+
+        </section>
+
+
+        <p
+            id="bookingsMessage"
+            class="message"
+        ></p>
+
+
+        <section
+            id="bookingsContainer"
+            class="bookings-container"
+        >
+
+            <p>
+                Loading bookings...
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/api.js"></script>
+
+    <script src="../js/bookings.js"></script>
+
+</body>
+
+</html>

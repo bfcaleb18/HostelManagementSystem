@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hostel Management System - Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="nav-brand">
+            Hostel Management System
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="rooms.html">
+                Rooms
+            </a>
+
+            <a href="bookings.html">
+                My Bookings
+            </a>
+
+            <button
+                id="logoutButton"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <main class="dashboard-container">
+
+        <section class="welcome-section">
+
+            <h1 id="welcomeMessage">
+                Welcome
+            </h1>
+
+            <p>
+                Manage your hostel accommodation from one place.
+            </p>
+
+        </section>
+
+
+        <section class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <h3>Available Rooms</h3>
+
+                <p id="availableRooms">
+                    0
+                </p>
+
+                <a href="rooms.html">
+                    View Rooms
+                </a>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>My Bookings</h3>
+
+                <p id="totalBookings">
+                    0
+                </p>
+
+                <a href="bookings.html">
+                    View Bookings
+                </a>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>Pending Bookings</h3>
+
+                <p id="pendingBookings">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>Approved Bookings</h3>
+
+                <p id="approvedBookings">
+                    0
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="quick-actions">
+
+            <h2>Quick Actions</h2>
+
+            <div class="action-buttons">
+
+                <a
+                    href="rooms.html"
+                    class="btn"
+                >
+                    Browse Rooms
+                </a>
+
+                <a
+                    href="bookings.html"
+                    class="btn"
+                >
+                    My Bookings
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/api.js"></script>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
